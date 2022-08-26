@@ -13,11 +13,11 @@
     "build": "npm run build:shell && npm run build:mfe1",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "run:all": "node node_modules/@angular-architects/module-federation/src/server/mf-dev-server.js"
   },
   "private": true,
   "dependencies": {
-    "@angular-architects/module-federation": "^14.3.0",
     "@angular/animations": "14.0.0",
     "@angular/common": "14.0.0",
     "@angular/compiler": "14.0.0",
@@ -33,6 +33,7 @@
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
+    "@angular-architects/module-federation": "^14.3.10",
     "@angular-devkit/architect": "^0.1400.0",
     "@angular-devkit/build-angular": "14.0.0",
     "@angular/cli": "14.0.0",
